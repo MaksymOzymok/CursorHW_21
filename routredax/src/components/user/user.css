@@ -1,0 +1,17 @@
+.user{
+margin: 40px auto;
+}
+.name{
+    font-size: 25px;
+}
+.username{
+    opacity: 50%;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.user-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-right: 10px;
+}

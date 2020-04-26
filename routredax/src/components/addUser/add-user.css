@@ -1,0 +1,28 @@
+.add-user-form{
+    padding-top: 50px;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    background: greenyellow;
+    text-align: center;
+}
+.add-user-form input{
+display: block;
+    margin: 10px auto;
+    font-size: 16px;
+}
+.add-user-form h1{
+    color: darkblue;
+}
+.add-user-btn{
+    width: 180px;
+    color: white;
+    font-size: 20px;
+    background: blue;
+    cursor: pointer;
+    transition: .2s;
+}
+.add-user-btn:hover{
+    background: darkblue;
+    transform: scale(1.1);
+}

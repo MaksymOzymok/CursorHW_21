@@ -1,0 +1,12 @@
+.menu{
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    justify-content: space-around;
+}
+.menu li{
+    background: greenyellow;
+    width: 15%;
+    text-align: center;
+}
