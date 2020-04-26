@@ -5,7 +5,7 @@ export const GET_POSTS_REQUEST = 'GET_POSTS_REQUEST';
 export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';
 export const POST_POST_REQUEST = 'POST_POST_REQUEST';
 export const POST_POST_SUCCESS = 'POST_POST_SUCCESS';
-
+const proxy = "https://cors-anywhere.herokuapp.com/";
 
 export function setLike(id) {
     return {
@@ -19,16 +19,17 @@ export function getPosts() {
         dispatch(getPostsRequest());
         axios({
             method: 'get',
-            url: 'https://77.120.108.119:9999/tweets/'
+            url: 'http://77.120.108.119:9999/tweets/'
         }).then(res => dispatch(getPostsSuccess(res.data.data)))
     }
 }
 export const postPost=({userId,content,image})=>{
     return dispatch =>{
        dispatch(postPostRequest());
+
       axios({
           method : 'post',
-          url: 'https://77.120.108.119:9999/tweets/',
+          url: 'http://77.120.108.119:9999/tweets/',
           data:{
               userId: parseInt(userId),
               content:content,

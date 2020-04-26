@@ -5,14 +5,14 @@ export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS';
 export const POST_USER_REQUEST = 'POST_USER_REQUEST';
 export const POST_USER_SUCCESS = 'POST_USER_SUCCESS';
 export const POST_USER_ERROR = 'POST_USER_ERROR';
-
+const proxy = "https://cors-anywhere.herokuapp.com/";
 
 export function getUsers() {
     return dispatch => {
         dispatch(getUsersRequest());
         axios({
             method: 'get',
-            url: 'https://77.120.108.119:9999/users/'
+            url:'http://77.120.108.119:9999/users/'
         })
             .then(res => {
                     dispatch(getUserSuccess(res.data))
@@ -26,7 +26,7 @@ export const addUser = ({name, username, avatar}) => {
         dispatch(postUserRequest());
 
         axios({ method:'post',
-            url:'https://77.120.108.119:9999/users/',
+            url: 'http://77.120.108.119:9999/users/',
             data: {
                 name,
                 username,
