@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9f4b54df7e8411e5d97d611531be15b",
+    "revision": "bd5c3772c8358434c23e57d2bf8634f4",
     "url": "/CursorHW_21/index.html"
   },
   {
-    "revision": "19038a4e7af82053deba",
+    "revision": "bd1f9c4c1a3826fcb530",
     "url": "/CursorHW_21/static/css/main.e52d36cd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CursorHW_21/static/js/2.ca272e3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "19038a4e7af82053deba",
-    "url": "/CursorHW_21/static/js/main.352559c7.chunk.js"
+    "revision": "bd1f9c4c1a3826fcb530",
+    "url": "/CursorHW_21/static/js/main.e4d2b42a.chunk.js"
   },
   {
     "revision": "2d9871fe85677b4e78ce",
