@@ -19,7 +19,7 @@ export function getPosts() {
         dispatch(getPostsRequest());
         axios({
             method: 'get',
-            url: 'https://77.120.108.119:9999/tweets/'
+            url: 'https://tweets.globalofficiallottery.com/tweets/'
         }).then(res => dispatch(getPostsSuccess(res.data.data)))
     }
 }
@@ -29,7 +29,7 @@ export const postPost=({userId,content,image})=>{
 
       axios({
           method : 'post',
-          url: 'https://77.120.108.119:9999/tweets/',
+          url: 'https://tweets.globalofficiallottery.com/tweets/',
           data:{
               userId: parseInt(userId),
               content:content,

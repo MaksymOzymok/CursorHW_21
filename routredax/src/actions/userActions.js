@@ -12,7 +12,7 @@ export function getUsers() {
         dispatch(getUsersRequest());
         axios({
             method: 'get',
-            url:'https://77.120.108.119:9999/users/'
+            url:'https://tweets.globalofficiallottery.com/users/'
         })
             .then(res => {
                     dispatch(getUserSuccess(res.data))
@@ -26,7 +26,7 @@ export const addUser = ({name, username, avatar}) => {
         dispatch(postUserRequest());
 
         axios({ method:'post',
-            url: 'https://77.120.108.119:9999/users/',
+            url: 'https://tweets.globalofficiallottery.com/users/',
             data: {
                 name,
                 username,
